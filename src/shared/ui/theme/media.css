@@ -1,0 +1,5 @@
+/**
+  This file is used by postcss-custom-media plugin.
+  So, if you are to move this file, change the path in postcss.config.js too.
+*/
+@custom-media --hover (hover: hover);

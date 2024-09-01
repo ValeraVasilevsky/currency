@@ -3,11 +3,15 @@ export default {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        black: "#242424",
+      },
 
       fontSize: {},
 
-      boxShadow: {},
+      boxShadow: {
+        custom: "0px 8px 20px 1px rgba(0, 0, 0, 0.25)",
+      },
 
       borderRadius: {},
     },
