@@ -1,0 +1,39 @@
+.root {
+  @apply border-[2px] border-solid border-gray-400 rounded-2xl transition-all outline-none relative cursor-pointer p-2;
+
+  @media (--hover) {
+    & .item {
+      &:hover {
+        @apply pl-4;
+      }
+    }
+  }
+
+  & .trigger {
+    @apply flex justify-start items-center flex-nowrap;
+
+    &[data-state="open"] {
+      & .icon {
+        @apply rotate-180;
+      }
+    }
+  }
+
+  & .input {
+    @apply bg-transparent border-none outline-none cursor-pointer;
+  }
+
+  & .icon {
+    @apply transition-all;
+  }
+
+  & .content {
+    @apply w-full absolute left-0 right-0 border-[2px] bg-black border-solid border-gray-400 rounded-2xl transition-all;
+
+    top: calc(100% + 4px);
+  }
+
+  & .item {
+    @apply w-full text-left px-2 py-3 transition-all;
+  }
+}

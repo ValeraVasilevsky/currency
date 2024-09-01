@@ -1,0 +1,13 @@
+.link {
+  @apply text-gray-400 text-base font-semibold transition-all;
+
+  @media (--hover) {
+    &:hover {
+      @apply text-white;
+    }
+  }
+
+  &.active {
+    @apply text-white;
+  }
+}
